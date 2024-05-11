@@ -13,10 +13,12 @@
 .Bottom {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
   
 .Social {
-  margin-left: 780px;
+  margin-left: 00px;
 }
   
 #Facebook {
@@ -42,4 +44,8 @@
   margin-left: 10px;
   cursor: pointer;
 }
-  
+
+
+
+
+
