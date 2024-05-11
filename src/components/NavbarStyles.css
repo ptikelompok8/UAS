@@ -15,7 +15,7 @@
 
 .NavbarMenus{
     margin-left: 30px;
-    display : grid;
+    display : flex;
     grid-template-columns: repeat(6, auto);
     grid-gap : 15px;
     list-style : none;
@@ -44,7 +44,7 @@
     display:flex;
     align-items: center;
     list-style: none;
-    margin-left: 270px;
+    display: none;
 }
 
 #Bar{
@@ -60,3 +60,43 @@
     color: white;
     text-align: right;
 }
+
+@media only screen and (max-width: 768px){  
+    .NavbarMenus{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(176, 224, 230, 0.5);
+        background-color: l;
+        z-index: 1;
+        transform: translateX(100%);
+        margin-top: 100px;
+        transition: all 1s;
+    }
+
+    .NavbarMenus li{
+        margin-bottom: 10px;
+    }
+
+    .NavbarMenus.slide{
+        transform: translateX(0);
+    }
+
+    .NavRight{
+        display: flex;
+        margin-left : auto;
+    }
+}
+
+
+
+  
+  
+
+  
+  
+  
