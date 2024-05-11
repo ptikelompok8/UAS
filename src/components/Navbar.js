@@ -21,7 +21,7 @@ class Navbar extends Component {
           </li>
           <li>
             <a className="NavbarMenu" href="/about">
-              <i className="fa-solid fa-info"></i>About
+              <i className="fa-solid fa-info"></i>About Us
             </a>
           </li>
           <li>
