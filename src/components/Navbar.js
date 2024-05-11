@@ -12,8 +12,7 @@ class Navbar extends Component {
     return (
       <nav className="NavbarComponents">
         <h1 className="NavbarSymbol">BabelTrip</h1>
-
-        <ul className="NavbarMenus">
+        <ul className={`NavbarMenus ${this.state.clicked ? 'slide' : ''}`}>
           <li>
             <a className="NavbarMenu" href="/">
               <i className="fa-solid fa-house-chimney"></i>Home
@@ -21,7 +20,7 @@ class Navbar extends Component {
           </li>
           <li>
             <a className="NavbarMenu" href="/about">
-              <i className="fa-solid fa-info"></i>About Us
+              <i className="fa-solid fa-info"></i>About
             </a>
           </li>
           <li>
@@ -63,3 +62,4 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+
