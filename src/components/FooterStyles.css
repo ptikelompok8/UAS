@@ -1,0 +1,45 @@
+.AboutUs {
+    background-color: skyblue;
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+    padding-top: 20px;
+  }
+  
+  .AboutUss {
+    color: white;
+    text-align: left;
+  }
+  
+  .Bottom {
+    display: flex;
+    list-style: none;
+  }
+  
+  .Social {
+    margin-left: 890px;
+  }
+  
+  #Facebook {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  #Instagram {
+    font-size: 2rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  #Gmail {
+    font-size: 2rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .Bot,
+  .PT {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
