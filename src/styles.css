@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
-*{
-  margin : 0;
-  padding : 0;
-  box-sizing : border-box;
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.Name{
+.Name {
   align-items: center;
   color: skyblue;
   font-size: 4rem;
@@ -21,40 +21,88 @@
   transform: translateY(-150%);
 }
 
-.Explore{
-  border-radius: 20px;
-  background-color: skyblue;
-  border-color: white;
-  padding: 20px;
-  transform: translateY(-150%);
+:root {
+  /* change this for scaling */
+  --m: 4rem;
+
+  --red: #ff6565;
+  --pink: #ff64f9;
+  --purple: #6b5fff;
+  --blue: #4d8aff;
+  --green: #5bff89;
+  --yellow: #ffee55;
+  --orange: #ff6d1b;
 }
 
-.AboutUs{
-  background-color:skyblue;
-  width: 100%;
-  height: 200px;
-  margin-top: 70px;
-  padding-top: 20px;
-}
-
-.AboutUss{
- color: white;
- text-align: left;
-}
-
-#Facebook{
-  font-size:1.5rem;
+.Explore {
+  border: calc(0.08 * var(--m)) solid transparent;
+  position: relative;
+  color: #f3f3f3;
+  font-family: "Space Grotesk";
+  font-size: var(--m);
+  border-radius: calc(0.7 * var(--m));
+  padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+  display: flex;
+  justify-content: center;
   cursor: pointer;
+
+  background: linear-gradient(#121213, #121213),
+    linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+    linear-gradient(
+      90deg,
+      var(--orange),
+      var(--yellow),
+      var(--green),
+      var(--blue),
+      var(--purple),
+      var(--pink),
+      var(--red)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
 }
 
-#Instagram{
-  font-size:1.5rem;
-  margin-left: 10px;
-  cursor: pointer;
+.Explore::before {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    var(--orange),
+    var(--yellow),
+    var(--green),
+    var(--blue),
+    var(--purple),
+    var(--pink),
+    var(--red)
+  );
+  height: 30%;
+  width: 60%;
+  position: absolute;
+  bottom: -20%;
+  z-index: -5;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+  filter: blur(calc(0.8 * var(--m)));
 }
 
-#Gmail{
-  font-size:1.5rem;
-  margin-left: 10px;
-  cursor: pointer;
+.Explore:hover,
+.Explore:hover::before {
+  animation: animate 0.5s infinite linear;
 }
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --m: 2rem;
+  }
+}
+
