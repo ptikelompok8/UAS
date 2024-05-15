@@ -1,0 +1,254 @@
+.Name {
+    color: darkgoldenrod;
+    font-size: 4rem;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1
+}
+
+.content {
+    position: absolute;
+    list-style: none;
+    display: grid;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.videoContainer {
+    position: relative;
+    margin-top: -102px;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.VideoBackground {
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.Home{
+    background-color: darkgoldenrod;
+}
+
+.ContentTwo{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.ContentTwo button{
+    margin: 50px;
+    height: 400px;
+    width: 400px;
+    background-image: url('../image/davin.png');
+    background-position: center;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    border : transparent;
+}
+
+.ContentTwo button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.ContentThree{
+    display: flex;
+    width: 100%;
+    transition: 2s;
+    margin-top: 50px;
+}
+
+.ContentThree img{
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+.ContentTri{
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#slide-1:target ~ .ContentThree{
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .ContentThree{
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .ContentThree{
+    margin-left: -200%;
+}
+
+#slide-4:target ~ .ContentThree{
+    margin-left: -300%;
+}
+
+#slide-5:target ~ .ContentThree{
+    margin-left: -400%;
+}
+
+.navi a{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.navi a:hover{
+    background-color: yellow;
+}
+
+.navi{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+@media only screen and (max-width: 768px){  
+    .ContentTri{
+        width : 90%;
+    }
+}
+
+body{
+    background-color: darkblue;
+    
+}
+
+.ContentFour{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.Tahu{
+    left: 0;
+}
+
+.FaktaBangka{
+    font-size: 0.8rem;
+    color: darkgoldenrod;
+}
+
+.BangkaImg{
+    margin-left: 30px;
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+}
+
+.Bangkaa{
+    display: flex;
+}
+
+.Timah{
+    display : flex;
+    margin-left: -100px;
+    margin-bottom: 30px;
+
+}
+
+.Lada{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.Tarsius{
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+.PBB{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.TimahImg, .LadaImg, .TarsiusImg, .PBBImg{
+    margin-right: 20px;
+    border-radius: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+.ContentFive{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.FaktaBelitung{
+    font-size: 0.8rem;
+    color: darkgoldenrod;
+}
+
+.BelitungImg{
+    margin-right: 30px;
+    width: 30%;
+    height: 30%;
+    margin-top: 50px;
+}
+
+.Belitungg{
+    display: flex;
+}
+
+.Lempah{
+    display : flex;
+    margin-right: -100px;
+    margin-bottom: 30px;
+
+}
+
+.Martabak{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.Pantai{
+    display: flex;
+    margin-right: 200px;
+    margin-bottom: 30px;
+}
+
+.Laskar{
+    display: flex;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.LempahImg, .MartabakImg, .PantaiImg, .LaskarImg{
+    margin-right: 20px;
+    border-radius: 150px;
+    width: 100px;
+    height: 100px;
+}
+
