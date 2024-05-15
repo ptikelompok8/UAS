@@ -30,3 +30,4 @@ function Footer({ showAdditionalContent }) {
   )};
 
 export default Footer;
+
