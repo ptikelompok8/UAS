@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,65 +9,10 @@
   font-style: normal;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-.App {
-  text-align: center;
-}
-
-.Name {
-  color: lightseagreen;
-  font-size: 4rem;
-  margin-top: 50vh;
-  transform: translateY(-150%);
-}
-
-.content {
-  position: absolute;
-  list-style : none;
-  display: grid;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-.Explore {
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color : lightseagreen;
-  padding: 10px;
-  cursor : pointer;
-}
-
-.Explore:hover{
-  background-color : lightblue;
-  transition : 0.3s;
-}
-
-.videoContainer {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.VideoBackground {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-}
 
 
 
