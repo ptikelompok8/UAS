@@ -1,9 +1,12 @@
 .AboutUs {
+  position: relative;
   width: 100%;
-  background-color: lightseagreen;
+  background-color: darkgoldenrod;
   color: white;
   padding: 20px;
+  top: 100%;
 }
+
   
 .AboutUss {
   color: white;
@@ -44,6 +47,11 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
+
+
+
+
 
 
 
