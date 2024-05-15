@@ -4,26 +4,28 @@ import Navbar from "./components/Navbar";
 import Review from "./routes/review";
 import { Home } from "./routes/Home";
 import Footer from "./components/footer";
+import About from "./routes/about"
 
 export default function App() {
   let component
-  switch(window.location.pathname){
+  switch (window.location.pathname) {
     case "/":
       component = <Home />
       break
-    case "/service": 
+    case "/service":
       component = <Review />
+      break
+    case "/about":
+      component = <About />
       break
 
   }
   return (
     <>
-      <Navbar/>
+      <Navbar />
       {component}
-      <Footer/>
+      <Footer />
     </>
   )
 }
-
-
 
