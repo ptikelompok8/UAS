@@ -7,7 +7,7 @@
 
 body {
   color: #555;
-  background: pink;
+  background: blue;
   text-align: center;
   font-family: 'Roboto Mono';
 }
@@ -100,6 +100,7 @@ h1 {
           font-weight: bold;
         }
     }
+
     >.back {
       display: block;
       color: white;
