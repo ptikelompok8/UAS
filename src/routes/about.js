@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'r    eact';
 import '../routes/aboutcss.css';
 import WillbertImage from "../image/wb.png";
 import RichardImage from "../image/richard.png";
@@ -32,7 +32,6 @@ function About() {
             description: "Mahasiswa Informatika Universitas Multimedia Nusantara angkatan 2023. Kelas B",
             image: DavinImage,
             links: [
-                { url: "https://github.com/mahmoudHamed97", icon: "fa-github" },
                 { url: "https://www.instagram.com/davin_chr369/", icon: "fa-instagram" },
                 { url: "https://www.linkedin.com/in/davee-undefined-43650428a", icon: "fa-linkedin-in" },
             ]
@@ -43,8 +42,7 @@ function About() {
             description: "Mahasiswa Informatika Universitas Multimedia Nusantara angkatan 2023. Kelas B",
             image: RichardImage,
             links: [
-                { url: "https://www.linkedin.com/in/sameh-shahin-542533162/", icon: "fa-linkedin-in" },
-                { url: "https://github.com/thesameh", icon: "fa-github" }
+                { url: "https://www.instagram.com/richardwijaya._/", icon: "fa-instagram" },
             ]
         },
         {
@@ -54,8 +52,7 @@ function About() {
             image: FerdiImage,
             links: [
                 { url: "https://www.linkedin.com/in/ferdi-68509b28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ", icon: "fa-linkedin-in" },
-                { url: "https://www.facebook.com/AshFlexing", icon: "fa-facebook-f" },
-                { url: "https://www.instagram.com/mo7amed.ash/", icon: "fa-instagram" },
+                { url: "https://www.instagram.com/ferdi_pnd/", icon: "fa-instagram" },
 
             ]
         },
