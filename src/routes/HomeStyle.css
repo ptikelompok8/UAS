@@ -145,6 +145,13 @@ body{
     margin-top: 50px;
     text-align: left;
 }
+.ContentFive{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    text-align: right;
+}
 
 .Tahu{
     left: 0;
@@ -197,51 +204,45 @@ body{
     height: 100px;
 }
 
-.ContentFive{
-    background-color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 50px;
-    text-align: right;
-}
 
 .FaktaBelitung{
     font-size: 0.8rem;
     color: darkgoldenrod;
 }
 
-.BelitungImg{
-    margin-right: 30px;
-    width: 30%;
-    height: 30%;
-    margin-top: 50px;
-}
+.BelitungImg {
+    order: 2; 
+    width: 50%;
+    height: auto;
+  }
 
-.Belitungg{
+.Belitungg {
     display: flex;
 }
 
+
 .Lempah{
     display : flex;
-    margin-right: -100px;
+    margin-right: 50px;
     margin-bottom: 30px;
 
 }
 
 .Martabak{
     display: flex;
+    margin-right: 100px;
     margin-bottom: 30px;
 }
 
 .Pantai{
     display: flex;
-    margin-right: 200px;
+    margin-right: 150px;
     margin-bottom: 30px;
 }
 
 .Laskar{
     display: flex;
-    margin-right: 100px;
+    margin-right: 200px;
     margin-bottom: 30px;
 }
 
