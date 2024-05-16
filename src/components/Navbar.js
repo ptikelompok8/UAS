@@ -1,65 +1,120 @@
-import { Component } from "react";
-import "./NavbarStyles.css";
+import React from "react";
+import videoBg from "../video/VideoBabel.mp4";
+import Lengkuas from '../img/lengkuas.jpeg';
+import DanauBiru from '../img/danaubiru.jpg';
+import PagodaTri from '../img/pagodatri.jpg';
+import PantaiTK from "../img/tanjungkalayang.JPG";
+import Tanjung from "../img/pantaitanjung.jpg";
+import PBangka from "../img/Bangka.png";
+import Timah from "../img/Timah.jpg";
+import Lada from "../img/Lada.jpg";
+import Tarsius from "../img/Tarsius.jpg"
+import PBB from "../img/PBB.jpg"
+import PBelitung from "../img/Belitung.png";
+import Pantai from "../img/Pantai.jpg";
+import Martabak from "../img/Martabak.jpg";
+import Lempah from "../img/Lempah.jpg";
+import Laskar from "../img/Laskar.jpg";
+import "./HomeStyle.css";
+import axios from 'axios';
+import YouTubeVideo from './YouTubeVideo'; 
 
-class Navbar extends Component {
-  state = { clicked: false };
+export function Home  () {
+  return (
+    <>
+      <div className="Home">
+        <div className="HomeContent">
+          <ul className="content">
+            <li>
+              <h1 className="Name">Bangka Belitung</h1>
+            </li>
+          </ul>
+          <div className="videoContainer">
+            <video className="VideoBackground" src={videoBg} autoPlay loop muted />
+          </div>
+        </div>
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
+        <div className="ContentTri">
+          <div className="slide">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <span id="slide-4"></span>
+            <span id="slide-5"></span>
 
-  render() {
-    return (
-      <nav className="NavbarComponents">
-        <h1 className="NavbarSymbol">BabelTrip</h1>
-        <ul className={`NavbarMenus ${this.state.clicked ? 'slide' : ''}`}>
-          <li>
-            <a className="NavbarMenu" href="/">
-              <i className="fa-solid fa-house-chimney"></i>Home
-            </a>
-          </li>
-          <li>
-            <a className="NavbarMenu" href="/about">
-              <i className="fa-solid fa-info"></i>About
-            </a>
-          </li>
-          <li>
-            <a className="NavbarMenu" href="/service">
-              <i className="fa-solid fa-briefcase"></i>Service
-            </a>
-          </li>
-          <li>
-            <a className="NavbarMenu" href="/destination">
-              <i className="fa-solid fa-phone"></i>destination
-            </a>
-          </li>
-          <li>
-            <a className="NavbarMenu" href="/signup">
-              <i className="fa-solid fa-right-to-bracket"></i>Sign Up
-            </a>
-          </li>
-        </ul>
-        <ul className="NavRight">
-          <li>
-            <a className="Language" href="/language">
-              <i className="fa-solid fa-globe"></i>
-            </a>
-          </li>
-          <li>
-            <div id="Icon" onClick={this.handleClick}>
-              <i
-                id="Bar"
-                className={
-                  this.state.clicked ? "fa-solid fa-x" : "fa-solid fa-bars"
-                }
-              ></i>
+            <div className="ContentThree">
+              <img className="Lengkuas" src={Lengkuas}></img>
+              <img className="DanauBiru" src={DanauBiru}></img>
+              <img className="PagodaTri" src={PagodaTri}></img>
+              <img className="TanjungKalayang" src={PantaiTK}></img>
+              <img className="PantaiTanjung" src={Tanjung}></img>
             </div>
-          </li>
-        </ul>
-      </nav>
-    );
-  }
-}
+          </div>
 
-export default Navbar;
+          <div className="navi">
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
+            <a href="#slide-5">5</a>
+          </div>
+        </div>
 
+        <div className="ContentFour">
+          <h1 className="Tahu">Tahu Gak Sih ??</h1>
+          <div className="Bangkaa">
+            <img className="BangkaImg" src={PBangka}></img>
+            <div className="FaktaBangka">
+              <div className="Timah">
+                <img className="TimahImg" src={Timah}></img>
+                <h1>Merupakan Daerah Penghasil Timah Terbesar di Indonesia</h1>
+              </div>
+              <div className="Lada">
+                <img className="LadaImg" src={Lada}></img>
+                <h1>Merupakan Daerah Penghasil Lada Putih Terbesar di Dunia</h1>
+              </div>
+              <div className="PBB">
+                <img className="PBBImg" src={PBB}></img>
+                <h1>Menjadi Tempat Perundingan PBB Pada 1949 </h1>
+              </div>
+              <div className="Tarsius">
+                <img className="TarsiusImg" src={Tarsius}></img>
+                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="ContentFive">
+          <div className="Belitungg">
+            <img className="BelitungImg" src={PBelitung}></img>
+            <div className="FaktaBangka">
+              <div className="Lempah">
+                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
+                <img className="LempahImg" src={Lempah}></img>
+              </div>
+              <div className="Martabak">
+                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
+                <img className="MartabakImg" src={Martabak}></img>
+              </div>
+              <div className="Pantai">
+                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
+                <img className="PantaiImg" src={Pantai}></img>
+              </div>
+              <div className="Laskar">
+                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
+                <img className="LaskarImg" src={Laskar}></img>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="ContentTwo">
+          <button className="Bangka"> Bangka </button>
+          <button className="Belitung"> Belitung </button>
+        </div>
+      </div>
+
+      <YouTubeVideo /> {/* Rendering the YouTubeVideo component */}
+    </>
+  );
+};
