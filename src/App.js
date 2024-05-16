@@ -5,6 +5,7 @@ import Review from "./routes/review";
 import { Home } from "./routes/Home";
 import Footer from "./components/footer";
 import About from "./routes/about"
+import MapComponent from "./routes/MapComponent";
 
 export default function App() {
   let component
@@ -18,6 +19,9 @@ export default function App() {
     case "/about":
       component = <About />
       break
+      case "/destination":
+        component = <MapComponent />
+        break
 
   }
   return (
