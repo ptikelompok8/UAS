@@ -29,8 +29,8 @@ class Navbar extends Component {
             </a>
           </li>
           <li>
-            <a className="NavbarMenu" href="/contact">
-              <i className="fa-solid fa-phone"></i>Contact
+            <a className="NavbarMenu" href="/destination">
+              <i className="fa-solid fa-phone"></i>destination
             </a>
           </li>
           <li>
