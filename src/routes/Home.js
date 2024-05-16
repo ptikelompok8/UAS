@@ -14,7 +14,7 @@ import PBelitung from "../img/Belitung.png";
 import Pantai from "../img/Pantai.jpg";
 import Martabak from "../img/Martabak.jpg";
 import Lempah from "../img/Lempah.jpg";
-import Laskar from "../img/Laskar.jpg";
+import Laskar from "../img/laskarpelangi.jpg";
 import "./HomeStyle.css";
 import axios from 'axios';
 import YouTubeVideo from './YouTubeVideo'; 
@@ -109,12 +109,27 @@ export function Home  () {
         </div>
 
         <div className="ContentTwo">
-          <button className="Bangka"> Bangka </button>
-          <button className="Belitung"> Belitung </button>
+          <button className="Bangka">
+          <li>
+            <a className="Buttontwo" href="/Bangka">
+             <i class="fa-solid fa-user-secret"></i>Bangka
+            </a>
+          </li>
+          </button>
+          <button className="Belitung"> 
+          <li>
+            <a className="Buttontwo" href="/Belitung">
+             <i class="fa-solid fa-user-secret"></i>Belitung
+            </a>
+          </li>
+          </button>
         </div>
       </div>
 
       <YouTubeVideo /> {/* Rendering the YouTubeVideo component */}
     </>
+  );
+};
+
   );
 };
