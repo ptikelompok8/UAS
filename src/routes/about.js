@@ -1,4 +1,4 @@
-import React from 'r    eact';
+import React from 'react';
 import '../routes/aboutcss.css';
 import WillbertImage from "../image/wb.png";
 import RichardImage from "../image/richard.png";
