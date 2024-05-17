@@ -61,7 +61,6 @@ export function Home  () {
         </div>
 
         <div className="ContentFour">
-          <h1 className="Tahu">Tahu Gak Sih ??</h1>
           <div className="Bangkaa">
             <img className="BangkaImg" src={PBangka}></img>
             <div className="FaktaBangka">
@@ -80,29 +79,6 @@ export function Home  () {
               <div className="Tarsius">
                 <img className="TarsiusImg" src={Tarsius}></img>
                 <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="ContentFive">
-          <div className="Belitungg">
-            <img className="BelitungImg" src={PBelitung}></img>
-            <div className="FaktaBangka">
-              <div className="Lempah">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="LempahImg" src={Lempah}></img>
-              </div>
-              <div className="Martabak">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="MartabakImg" src={Martabak}></img>
-              </div>
-              <div className="Pantai">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="PantaiImg" src={Pantai}></img>
-              </div>
-              <div className="Laskar">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="LaskarImg" src={Laskar}></img>
               </div>
             </div>
           </div>
@@ -126,10 +102,8 @@ export function Home  () {
         </div>
       </div>
 
-      <YouTubeVideo /> {/* Rendering the YouTubeVideo component */}
+      <YouTubeVideo /> 
     </>
   );
 };
 
-  );
-};
