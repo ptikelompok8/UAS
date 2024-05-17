@@ -148,8 +148,8 @@
     left: 0;
 }
 
-.FaktaBangka {
-    font-size: 0.8rem;
+.FaktaBangka h1 {
+    font-size: 1.5rem;
     color: darkgoldenrod;
 }
 
@@ -185,48 +185,6 @@
     height: 100px;
 }
 
-.FaktaBelitung {
-    font-size: 0.8rem;
-    color: darkgoldenrod;
-}
-
-.BelitungImg {
-    order: 2;
-    width: 50%;
-    height: auto;
-}
-
-.Belitungg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.Belitungg > * {
-    margin-left: auto;
-}
-
-.Lempah,
-.Martabak,
-.Pantai,
-.Laskar {
-    display: flex;
-    margin-bottom: 30px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.LempahImg,
-.MartabakImg,
-.PantaiImg,
-.LaskarImg {
-    margin-right: 20px;
-    border-radius: 150px;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    left: 0;
-}
 
 
 @media only screen and (max-width: 768px) {
@@ -250,22 +208,22 @@
         top: 20%;
     }
 
-    .ContentFour, .ContentFive {
+    .ContentFou{
         text-align: center;
     }
 
-    .BangkaImg, .BelitungImg {
+    .BangkaImg{
         width: 100%;
         height: auto;
         margin: 20px 0;
     }
 
-    .Bangkaa, .Belitungg {
+    .Bangkaa{
         flex-direction: column;
         align-items: center;
     }
 
-    .FaktaBangka div, .FaktaBelitung div {
+    .FaktaBangka div{
         margin: 20px 0;
     }
 
@@ -285,13 +243,6 @@
         
 }
 
-@media only screen and (max-width: 480px) {
 
-    .ContentTwo button {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-}
 
 
