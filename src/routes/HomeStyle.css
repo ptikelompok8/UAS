@@ -5,7 +5,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1
+    z-index: 1;
 }
 
 .content {
@@ -36,74 +36,75 @@
     z-index: 0;
 }
 
-.Home{
+.Home {
     background-color: darkgoldenrod;
 }
 
-.ContentTwo{
+.ContentTwo {
     margin-top: 50px;
     justify-content: center;
     display: flex;
 }
 
-.ContentTwo button{
+.ContentTwo button {
     margin: 50px;
-    height: 400px;
+    height: 300px;
     width: 400px;
-    background-image: url('../image/davin.png');
+    background-image: url('../img/BelitungBG.jpg');
     background-position: center;
     border-radius: 70px;
     cursor: pointer;
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-    border : transparent;
+    border: transparent;
+    margin-bottom: 0;
+    margin-top: 100px;
 }
 
-.ContentTwo button:hover{
+.ContentTwo button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
-.ContentThree{
+.ContentThree {
     display: flex;
     width: 100%;
     transition: 2s;
     margin-top: 50px;
 }
 
-.ContentThree img{
+.ContentThree img {
     width: 100%;
     border-radius: 50px;
-
 }
 
-.ContentTri{
+.ContentTri {
     width: 800px;
     margin: auto;
     border-radius: 10px;
     overflow: hidden;
 }
 
-#slide-1:target ~ .ContentThree{
+#slide-1:target ~ .ContentThree {
     margin-left: 0px;
 }
 
-#slide-2:target ~ .ContentThree{
+#slide-2:target ~ .ContentThree {
     margin-left: -100%;
 }
 
-#slide-3:target ~ .ContentThree{
+#slide-3:target ~ .ContentThree {
     margin-left: -200%;
 }
 
-#slide-4:target ~ .ContentThree{
+#slide-4:target ~ .ContentThree {
     margin-left: -300%;
 }
 
-#slide-5:target ~ .ContentThree{
+#slide-5:target ~ .ContentThree {
     margin-left: -400%;
 }
 
-.navi a{
+.navi a {
     display: inline-block;
     height: 25px;
     width: 25px;
@@ -113,11 +114,11 @@
     margin: 3px;
 }
 
-.navi a:hover{
+.navi a:hover {
     background-color: yellow;
 }
 
-.navi{
+.navi {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -127,25 +128,15 @@
     margin-top: -50px;
 }
 
-@media only screen and (max-width: 768px){  
-    .ContentTri{
-        width : 90%;
-    }
-}
-
-body{
-    background-color: darkblue;
-    
-}
-
-.ContentFour{
+.ContentFour {
     background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 50px;
     text-align: left;
 }
-.ContentFive{
+
+.ContentFive {
     background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -153,103 +144,154 @@ body{
     text-align: right;
 }
 
-.Tahu{
+.Tahu {
     left: 0;
 }
 
-.FaktaBangka{
+.FaktaBangka {
     font-size: 0.8rem;
     color: darkgoldenrod;
 }
 
-.BangkaImg{
+.BangkaImg {
     margin-left: 30px;
     width: 50%;
     height: 50%;
     margin-top: 50px;
 }
 
-.Bangkaa{
+.Bangkaa {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.Timah{
-    display : flex;
-    margin-left: -100px;
-    margin-bottom: 30px;
-
-}
-
-.Lada{
+.Timah,
+.Lada,
+.Tarsius,
+.PBB {
     display: flex;
     margin-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.Tarsius{
-    display: flex;
-    margin-left: 200px;
-    margin-bottom: 30px;
-}
-
-.PBB{
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 30px;
-}
-
-.TimahImg, .LadaImg, .TarsiusImg, .PBBImg{
+.TimahImg,
+.LadaImg,
+.TarsiusImg,
+.PBBImg {
     margin-right: 20px;
     border-radius: 150px;
     width: 100px;
     height: 100px;
 }
 
-
-.FaktaBelitung{
+.FaktaBelitung {
     font-size: 0.8rem;
     color: darkgoldenrod;
 }
 
 .BelitungImg {
-    order: 2; 
+    order: 2;
     width: 50%;
     height: auto;
-  }
+}
 
 .Belitungg {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-
-.Lempah{
-    display : flex;
-    margin-right: 50px;
-    margin-bottom: 30px;
-
+.Belitungg > * {
+    margin-left: auto;
 }
 
-.Martabak{
+.Lempah,
+.Martabak,
+.Pantai,
+.Laskar {
     display: flex;
-    margin-right: 100px;
     margin-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.Pantai{
-    display: flex;
-    margin-right: 150px;
-    margin-bottom: 30px;
-}
-
-.Laskar{
-    display: flex;
-    margin-right: 200px;
-    margin-bottom: 30px;
-}
-
-.LempahImg, .MartabakImg, .PantaiImg, .LaskarImg{
+.LempahImg,
+.MartabakImg,
+.PantaiImg,
+.LaskarImg {
     margin-right: 20px;
     border-radius: 150px;
     width: 100px;
     height: 100px;
+    right: 0;
+    left: 0;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .ContentTri {
+        width: 90%;
+    }
+
+    .ContentTwo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContentTwo button {
+        width: 80%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .Name {
+        font-size: 2rem;
+        top: 20%;
+    }
+
+    .ContentFour, .ContentFive {
+        text-align: center;
+    }
+
+    .BangkaImg, .BelitungImg {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .Bangkaa, .Belitungg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FaktaBangka div, .FaktaBelitung div {
+        margin: 20px 0;
+    }
+
+    .Name {
+        font-size: 3rem;
+        top: 300px;
+    }
+
+    .LempahImg{
+        margin-right: 0;
+    }
+
+    .Lempah h1{
+        font-size: 1.5rem;
+        text-align: right;
+    }
+        
+}
+
+@media only screen and (max-width: 480px) {
+
+    .ContentTwo button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
 
