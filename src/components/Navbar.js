@@ -25,7 +25,7 @@ class Navbar extends Component {
           </li>
           <li>
             <a className="NavbarMenu" href="/service">
-              <i className="fa-solid fa-briefcase"></i>Service
+              <i className="fa-solid fa-briefcase"></i>Nature
             </a>
           </li>
           <li>
@@ -62,4 +62,3 @@ class Navbar extends Component {
 }
 
 export default Navbar;
-

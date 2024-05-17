@@ -14,7 +14,7 @@ import PBelitung from "../img/Belitung.png";
 import Pantai from "../img/Pantai.jpg";
 import Martabak from "../img/Martabak.jpg";
 import Lempah from "../img/Lempah.jpg";
-import Laskar from "../img/Laskar.jpg";
+import Laskar from "../img/laskarpelangi.jpg";
 import "./HomeStyle.css";
 import axios from 'axios';
 import YouTubeVideo from './YouTubeVideo'; 
@@ -61,7 +61,6 @@ export function Home  () {
         </div>
 
         <div className="ContentFour">
-          <h1 className="Tahu">Tahu Gak Sih ??</h1>
           <div className="Bangkaa">
             <img className="BangkaImg" src={PBangka}></img>
             <div className="FaktaBangka">
@@ -84,37 +83,27 @@ export function Home  () {
             </div>
           </div>
         </div>
-        <div className="ContentFive">
-          <div className="Belitungg">
-            <img className="BelitungImg" src={PBelitung}></img>
-            <div className="FaktaBangka">
-              <div className="Lempah">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="LempahImg" src={Lempah}></img>
-              </div>
-              <div className="Martabak">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="MartabakImg" src={Martabak}></img>
-              </div>
-              <div className="Pantai">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="PantaiImg" src={Pantai}></img>
-              </div>
-              <div className="Laskar">
-                <h1>Memiliki Hewan Endemik Tarsius Yaitu Monyet Terkecil Di Dunia</h1>
-                <img className="LaskarImg" src={Laskar}></img>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className="ContentTwo">
-          <button className="Bangka"> Bangka </button>
-          <button className="Belitung"> Belitung </button>
+          <button className="Bangka">
+          <li>
+            <a className="Buttontwo" href="/Bangka">
+             <i class="fa-solid fa-user-secret"></i>Bangka
+            </a>
+          </li>
+          </button>
+          <button className="Belitung"> 
+          <li>
+            <a className="Buttontwo" href="/Belitung">
+             <i class="fa-solid fa-user-secret"></i>Belitung
+            </a>
+          </li>
+          </button>
         </div>
       </div>
 
-      <YouTubeVideo /> {/* Rendering the YouTubeVideo component */}
+      <YouTubeVideo /> 
     </>
   );
 };
+
