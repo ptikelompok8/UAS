@@ -20,33 +20,12 @@
   align-items: center;
 }
   
-.Social {
-  margin-left: 00px;
-}
-  
-#Facebook {
-  font-size: 2rem;
-  margin-left: 10px;
-  cursor: pointer;
-}
-  
-#Instagram {
-  font-size: 2rem;
-  margin-left: 10px;
-  cursor: pointer;
-}
-  
-#Gmail {
-  font-size: 2rem;
-  margin-left: 10px;
-  cursor: pointer;
-}
-  
 .Bot,
 .PT {
   margin-left: 10px;
   cursor: pointer;
 }
+
 
 
 
