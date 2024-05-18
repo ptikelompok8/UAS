@@ -60,6 +60,10 @@
     margin-top: 100px;
 }
 
+.ContentTwo .Buttontwo {
+    color: lightblue; 
+  }
+
 .ContentTwo button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
@@ -324,10 +328,3 @@
         color: darkgoldenrod;
     }
 }
-
-
-
-
-
-
-
