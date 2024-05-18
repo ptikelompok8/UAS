@@ -1,0 +1,320 @@
+html,
+body.signup-body {
+  width: 100%;
+  height: 100%;
+}
+
+.signup-body {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 254, 234, 1) 0%,
+    rgba(255, 254, 234, 1) 35%,
+    #9cfaff 100%
+  );
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.signup-body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: -20px 0 50px;
+  margin-top: 20px;
+}
+
+.signup-h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.signup-p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.signup-span {
+  font-size: 12px;
+}
+
+.signup-a {
+  color: #0e263d;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.signup-container {
+  background: #fff;
+  border-radius: 90px;
+  box-shadow: 30px 14px 28px rgba(0, 0, 5, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  opacity: 85%;
+  width: 768px;
+  max-width: 100%;
+  min-height: 400px;
+  transition: 333ms;
+}
+
+.signup-form-container form {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signup-form-container input {
+  background: #eee;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.signup-form-container input:hover {
+  transform: scale(101%);
+}
+
+.signup-button {
+  border-radius: 50px;
+  box-shadow: 0 1px 1px;
+  border: 1px solid #008ecf;
+  background: #008ecf;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.signup-button:active {
+  transform: scale(0.95);
+}
+
+.signup-button:focus {
+  outline: none;
+}
+
+.signup-button.ghost {
+  background: transparent;
+  border-color: #fff;
+}
+
+.signup-form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.signup-sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.signup-sign-up-container {
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.signup-overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.signup-overlay {
+  background: #ffffff;
+  background: linear-gradient(to right, hsl(222, 77%, 66%), #008ecf) no-repeat 0
+    0 / cover;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.signup-overlay-panel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.signup-overlay-right {
+  right: 0;
+  transform: translateY(0);
+}
+
+.signup-overlay-left {
+  transform: translateY(-20%);
+}
+
+/* Move signin to right */
+.signup-container.right-panel-active .signup-sign-in-container {
+  transform: translateY(100%);
+}
+
+/* Move overlay to left */
+.signup-container.right-panel-active .signup-overlay-container {
+  transform: translateX(-100%);
+}
+
+/* Bring signup over signin */
+.signup-container.right-panel-active .signup-sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Move overlay back to right */
+.signup-container.right-panel-active .signup-overlay {
+  transform: translateX(50%);
+}
+
+/* Bring back the text to center */
+.signup-container.right-panel-active .signup-overlay-left {
+  transform: translateY(0);
+}
+
+/* Same effect for right */
+.signup-container.right-panel-active .signup-overlay-right {
+  transform: translateY(20%);
+}
+
+.signup-ghost {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.signup-ghost:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.signup-signin,
+.signup-signup {
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.signup-signin:hover,
+.signup-signup:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Ukuran layar mobile phone minimal resolusi 576px */
+@media (max-width: 576px) {
+  .signup-body {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .signup-container {
+    width: auto;
+    min-height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .signup-form-container {
+    width: 100%;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transform: none;
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk memisahkan form */
+  }
+
+  .signup-form-container input,
+  .signup-form-container button,
+  .signup-p,
+  .signup-span,
+  .signup-a {
+    font-size: 9px; /* Ukuran teks diperkecil */
+  }
+
+  .signup-form-container input {
+    padding: 5px 10px; /* Padding input diperkecil */
+  }
+
+  .signup-sign-in-container,
+  .signup-sign-up-container {
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.6s ease-in-out;
+  }
+
+  .signup-overlay-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    transform: none;
+  }
+
+  .signup-overlay {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+
+  .signup-overlay-panel {
+    width: 100%;
+  }
+
+  .signup-overlay-right {
+    right: 0;
+  }
+
+  .signup-overlay-left {
+    transform: none;
+  }
+
+  .signup-h1 {
+    font-size: 2cqmin;
+  }
+}
