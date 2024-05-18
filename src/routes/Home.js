@@ -83,6 +83,25 @@ export function Home  () {
             </div>
           </div>
         </div>
+        <div className="ContentFive">
+          <div className="Belitungg">
+            <div className="FaktaBelitung">
+              <div className="Lempah">
+                <h1>Memilki makanan khas olahan ikan yaitu Lempah Darat</h1>
+                <img className="LempahImg" src={Lempah}></img>
+              </div>
+              <div className="Pantai">
+                <h1>Memiliki jumlah pantai yang sangat banyak dengan panorama yang memukau</h1>
+                <img className="PantaiImg" src={Pantai}></img>
+              </div>
+              <div className="Laskar">
+                <h1>Memiliki Julukan Negeri Laskar Pelangi</h1>
+                <img className="LaskarImg" src={Laskar}></img>
+              </div>
+            </div>
+            <img className="BelitungImg" src={PBelitung}></img>
+          </div>
+        </div>
 
         <div className="ContentTwo">
           <button className="Bangka">
@@ -106,4 +125,5 @@ export function Home  () {
     </>
   );
 };
+
 
