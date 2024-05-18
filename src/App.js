@@ -4,9 +4,11 @@ import Navbar from "./components/Navbar";
 import Review from "./routes/review";
 import { Home } from "./routes/Home";
 import Footer from "./components/footer";
-import About from "./routes/about"
+import About from "./routes/about";
 import MapComponent from "./routes/MapComponent";
-
+import Bangka from "./routes/Bangka";
+import Belitung from "./routes/Belitung";
+import Signup from "./routes/signup";
 export default function App() {
   let component
   switch (window.location.pathname) {
@@ -22,6 +24,20 @@ export default function App() {
       case "/destination":
         component = <MapComponent />
         break
+        case "/signup":
+      component = <Signup />;
+      break;
+    default:
+      component = <Home />; 
+      break;
+  
+        case "/Bangka":
+          component = <Bangka />
+          break
+          case "/Belitung":
+            component = <Belitung />
+            break
+
 
   }
   return (
@@ -32,4 +48,6 @@ export default function App() {
     </>
   )
 }
+
+
 
