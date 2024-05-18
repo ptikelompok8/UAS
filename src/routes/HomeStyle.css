@@ -152,6 +152,10 @@
     font-size: 1.5rem;
     color: darkgoldenrod;
 }
+.FaktaBelitung h1 {
+    font-size: 1.5rem;
+    color: darkgoldenrod;
+}
 
 .BangkaImg {
     margin-left: 30px;
@@ -185,67 +189,44 @@
     height: 100px;
 }
 
-.FaktaBelitung h1 {
-    font-size: 1.5rem;
-    color: darkgoldenrod;
-}
-
 .BelitungImg {
-    margin-right: 30px;
-    width: 30%;
-    height: 30%;
-    margin-top: 80px;
-}
+    width: 50%;
+    height: auto;
+  }
 
 .Belitungg {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
-.Lempah,
-.Martabak,
-.Pantai,
-.Laskar {
+
+.Lempah{
+    display : flex;
+    margin-bottom: 30px;
+    margin-left: 50px;
+
+}
+
+.Martabak{
     display: flex;
     margin-bottom: 30px;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-.LempahImg{
-    margin-right: 20px;
-    border-radius: 150px;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    left: 0;
+.Pantai{
+    display: flex;
+    margin-bottom: 30px;
 }
 
-.MartabakImg{
-    margin-right: 20px;
-    border-radius: 150px;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    left: 0;
-}
-.PantaiImg{
-    margin-right: 20px;
-    border-radius: 150px;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    left: 0;
+.Laskar{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 200px;
 }
 
-.LaskarImg {
-    margin-right: 20px;
+.LempahImg, .MartabakImg, .PantaiImg, .LaskarImg{
     border-radius: 150px;
     width: 100px;
     height: 100px;
-    right: 0;
-    left: 0;
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -267,10 +248,6 @@
     .Name {
         font-size: 2rem;
         top: 20%;
-    }
-
-    .ContentFou{
-        text-align: center;
     }
 
     .BangkaImg{
@@ -301,8 +278,54 @@
         font-size: 1.5rem;
         text-align: right;
     }
-        
+
+    .BelitungImg{
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .Belitungg{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FaktaBelitungdiv{
+        margin: 20px 0;
+    }
+
+    .LempahImg{
+        margin-right: 0;
+    }
+
+    .Lempah h1{
+        font-size: 1.5rem;
+        text-align: right;
+        color: darkgoldenrod;
+    }
+
+    .PantaiImg{
+        margin-right: 0;
+    }
+
+    .Pantai h1{
+        font-size: 1.5rem;
+        text-align: right;
+        color: darkgoldenrod;
+    }
+    
+    .LaskarImg{
+        margin-right: 0;
+    }
+
+    .Laskar h1{
+        font-size: 1.5rem;
+        text-align: right;
+        color: darkgoldenrod;
+    }
 }
+
+
 
 
 
