@@ -1,5 +1,5 @@
 .Name {
-    color: darkgoldenrod;
+    color: #EEF7FF;
     font-size: 4rem;
     position:absolute;
     top: 50%;
@@ -37,7 +37,7 @@
 }
 
 .Home {
-    background-color: darkgoldenrod;
+    background-color: #CDE8E5;
 }
 
 .ContentTwo {
@@ -119,7 +119,7 @@
 }
 
 .navi a:hover {
-    background-color: yellow;
+    background-color: #4D869C;
 }
 
 .navi {
@@ -154,11 +154,11 @@
 
 .FaktaBangka h1 {
     font-size: 1.5rem;
-    color: darkgoldenrod;
+    color: #4D869C;
 }
 .FaktaBelitung h1 {
     font-size: 1.5rem;
-    color: darkgoldenrod;
+    color: #4D869C;
 }
 
 .BangkaImg {
@@ -305,7 +305,7 @@
     .Lempah h1{
         font-size: 1.5rem;
         text-align: right;
-        color: darkgoldenrod;
+        color: #4D869C;
     }
 
     .PantaiImg{
@@ -315,7 +315,7 @@
     .Pantai h1{
         font-size: 1.5rem;
         text-align: right;
-        color: darkgoldenrod;
+        color: #4D869C;
     }
     
     .LaskarImg{
@@ -325,6 +325,6 @@
     .Laskar h1{
         font-size: 1.5rem;
         text-align: right;
-        color: darkgoldenrod;
+        color: #4D869C;
     }
 }
