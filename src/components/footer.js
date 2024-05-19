@@ -9,6 +9,13 @@ function Footer({ showAdditionalContent }) {
         <li className="PT">
             <h2>PT. BabelTrip Indonesia</h2>
         </li>
+        <li>
+            <div className="Social">
+            <i id="Facebook" className="fa-brands fa-facebook"></i>
+            <i id="Instagram" className="fa-brands fa-instagram"></i>
+            <i id="Gmail" className="fa-solid fa-envelope"></i>
+            </div>
+        </li>
     </ul>
       <div className="Bot">
         <br />
@@ -23,6 +30,3 @@ function Footer({ showAdditionalContent }) {
   )};
 
 export default Footer;
-
-
-
