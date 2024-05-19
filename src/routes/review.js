@@ -27,7 +27,6 @@ export default function Review() {
       <div className="back" style={{ backgroundImage: `url(${backImage})` }}>
         <h2>Info</h2>
         <p>{info}</p>
-        <h2 className="api-box">MAPS</h2>
       </div>
     </div>
   );
