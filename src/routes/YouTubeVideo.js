@@ -41,8 +41,6 @@ const YouTubeVideo = () => {
     <div style={{ maxWidth: 'auto', margin: 'auto', textAlign: 'center' }}>
       {videoInfo && (
         <div>
-          <h2 style={{ marginTop: '20px' }}>{videoInfo.snippet.title}</h2>
-          <p>{videoInfo.snippet.description}</p>
           <iframe
             title="YouTube Video"
             width="560"
