@@ -1,7 +1,7 @@
 .AboutUs {
   position: relative;
   width: 100%;
-  background-color: darkgoldenrod;
+  background-color: #7AB2B2;
   color: white;
   padding: 20px;
   top: 100%;
@@ -20,19 +20,30 @@
   align-items: center;
 }
   
+.Social {
+  margin-left: 00px;
+}
+  
+#Facebook {
+  font-size: 2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+  
+#Instagram {
+  font-size: 2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+  
+#Gmail {
+  font-size: 2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+  
 .Bot,
 .PT {
   margin-left: 10px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
