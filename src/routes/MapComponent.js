@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import WeatherComponent from './WeatherComponent';
-
+import './map.css';
 const locations = [
 ];
 
@@ -35,7 +35,7 @@ const Map = () => {
   };
 
   return (
-    <div>
+    <div className="map-container">
       <ul>
         {locations.map((location, index) => (
           <li key={index} onClick={() => setSelectedLocation(location)}>
@@ -64,14 +64,14 @@ const Map = () => {
         </div>
       )}
 
-      <iframe
-        title="Embedded Map"
-        width="640"
-        height="480"
-        src="https://www.google.com/maps/d/embed?mid=1GYHrwsW4RLOtPDj-xKg60xWrh3Qz6nI&ehbc=2E312F"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
+      <div className="map-responsive-container">
+        <iframe
+          title="Embedded Map"
+          src="https://www.google.com/maps/d/embed?mid=1GYHrwsW4RLOtPDj-xKg60xWrh3Qz6nI&ehbc=2E312F"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
       <WeatherComponent />
     </div>
   );

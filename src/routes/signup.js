@@ -3,39 +3,53 @@ import "./Signup.css"; // Import the CSS file
 
 export default function Signup() {
   const [isSignUp, setIsSignUp] = useState(false);
-
+  const [username, setUsername] = useState('');
+  
   const toggleForm = () => {
     setIsSignUp(!isSignUp);
+  };
+
+  const handleSignIn = (name) => {
+    setUsername(name);
   };
 
   return (
     <div className={`signup-container ${isSignUp ? "right-panel-active" : ""}`}>
       <div className="signup-form-container signup-sign-in-container">
-        <SignInForm />
+        <SignInForm onSignIn={handleSignIn} />
       </div>
       <div className="signup-form-container signup-sign-up-container">
         <SignUpForm />
       </div>
       <div className="signup-overlay-container">
-        <Overlay toggleForm={toggleForm} />
+        <Overlay toggleForm={toggleForm} username={username} />
       </div>
     </div>
   );
 }
+const SignInForm = ({ onSignIn }) => {
+  const [username, setUsername] = useState('');
 
-const SignInForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would typically handle the sign in logic,
+    // for simplicity, just passing the username to the parent component
+    onSignIn(username);
+  };
+
   return (
-    <form action="#">
+    <form onSubmit={handleSubmit}>
       <h1 className="signup-h1">Sign in</h1>
-      <span className="signup-span">Sign in using E-Mail Address</span>
+      <span className="signup-span">Sign in using Username</span>
       <label>
-        <input type="email" placeholder="Email" />
+        <input 
+          type="text" 
+          placeholder="Username" 
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
       </label>
-      <label>
-        <input type="password" placeholder="Password" />
-      </label>
-      <a className="signup-a" href="#">Forgot your password?</a>
-      <button className="signup-button signup-signin">Sign In</button>
+      <button className="signup-button signup-signin" type="submit">Sign In</button>
     </form>
   );
 };
@@ -43,25 +57,11 @@ const SignInForm = () => {
 const SignUpForm = () => {
   return (
     <form action="#">
-      <h1 className="signup-h1">Sign Up</h1>
-      <span className="signup-span">Use your Email for registration</span>
-      <label>
-        <input type="text" placeholder="Name" />
-      </label>
-      <label>
-        <input type="email" placeholder="Email" />
-      </label>
-      <label>
-        <input type="password" placeholder="Password" />
-      </label>
-      <button className="signup-button signup-signup" style={{ marginTop: "9px" }}>
-        Sign Up
-      </button>
     </form>
   );
 };
 
-const Overlay = ({ toggleForm }) => {
+const Overlay = ({ toggleForm, username }) => {
   return (
     <div className="signup-overlay">
       <div className="signup-overlay-panel signup-overlay-left">
@@ -72,11 +72,9 @@ const Overlay = ({ toggleForm }) => {
         </button>
       </div>
       <div className="signup-overlay-panel signup-overlay-right">
-        <h1 className="signup-h1">Create Account!</h1>
-        <p className="signup-p">Sign up if you still don't have an account ...</p>
-        <button className="signup-button signup-ghost" onClick={toggleForm}>
-          Sign Up
-        </button>
+        {username && (
+          <p>Welcome back, {username}!</p>
+        )}
       </div>
     </div>
   );

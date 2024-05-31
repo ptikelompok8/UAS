@@ -5,7 +5,7 @@ import './music.css';
 
 function App() {
   const [token, setToken] = useState(null);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState('Bangka Belitung'); // Set default query to "Bangka Belitung"
   const [playlists, setPlaylists] = useState([]);
   const [selectedPlaylist, setSelectedPlaylist] = useState(null);
 
@@ -31,7 +31,7 @@ function App() {
             Authorization: `Bearer ${token}`,
           },
           params: {
-            q: `Bangka Belitung ${query}`, // Include "Bangka Belitung" in the search query
+            q: query,
             type: 'playlist',
           },
         });
