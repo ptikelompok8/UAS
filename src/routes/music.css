@@ -1,0 +1,57 @@
+/* App.css */
+
+  h1 {
+ 
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #17a348;
+  }
+  
+  a:hover {
+    background-color: #17a348;
+  }
+  
+  .playlist {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .playlist p {
+    margin: 0;
+  }
+  
+  iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
