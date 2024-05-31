@@ -30,7 +30,7 @@ export default function App() {
       component = <Signup />;
       break;
     case "/music":
-      component = <Music />; // Add the Music component case
+      component = <Music />; 
       break;
     case "/Bangka":
       component = <Bangka />;

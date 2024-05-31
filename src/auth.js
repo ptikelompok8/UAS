@@ -1,4 +1,4 @@
-
+ 
 import queryString from 'query-string';
 
 const authEndpoint = 'https://accounts.spotify.com/authorize';

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { getTokenFromUrl, loginUrl } from '../auth';
 import './music.css';
+
 function App() {
   const [token, setToken] = useState(null);
   const [query, setQuery] = useState('');
@@ -30,7 +31,7 @@ function App() {
             Authorization: `Bearer ${token}`,
           },
           params: {
-            q: query,
+            q: `Bangka Belitung ${query}`, // Include "Bangka Belitung" in the search query
             type: 'playlist',
           },
         });
@@ -88,4 +89,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
