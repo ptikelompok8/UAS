@@ -9,36 +9,38 @@ import MapComponent from "./routes/MapComponent";
 import Bangka from "./routes/Bangka";
 import Belitung from "./routes/Belitung";
 import Signup from "./routes/signup";
+import Music from "./routes/Music"; // Import the Music component
+
 export default function App() {
-  let component
+  let component;
   switch (window.location.pathname) {
     case "/":
-      component = <Home />
-      break
+      component = <Home />;
+      break;
     case "/service":
-      component = <Review />
-      break
+      component = <Review />;
+      break;
     case "/about":
-      component = <About />
-      break
-      case "/destination":
-        component = <MapComponent />
-        break
-        case "/signup":
+      component = <About />;
+      break;
+    case "/destination":
+      component = <MapComponent />;
+      break;
+    case "/signup":
       component = <Signup />;
       break;
-    default:
-      component = <Home />; 
+    case "/music":
+      component = <Music />; // Add the Music component case
       break;
-  
-        case "/Bangka":
-          component = <Bangka />
-          break
-          case "/Belitung":
-            component = <Belitung />
-            break
-
-
+    case "/Bangka":
+      component = <Bangka />;
+      break;
+    case "/Belitung":
+      component = <Belitung />;
+      break;
+    default:
+      component = <Music />;
+      break;
   }
   return (
     <>
@@ -46,5 +48,5 @@ export default function App() {
       {component}
       <Footer />
     </>
-  )
+  );
 }
