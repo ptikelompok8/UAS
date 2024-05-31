@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import WeatherComponent from './WeatherComponent';
 
 const locations = [
 ];
@@ -36,7 +37,6 @@ const Map = () => {
   return (
     <div>
       <ul>
-        {}
         {locations.map((location, index) => (
           <li key={index} onClick={() => setSelectedLocation(location)}>
             {location.name}
@@ -44,7 +44,6 @@ const Map = () => {
         ))}
       </ul>
 
-      {}
       {selectedLocation && (
         <div>
           <h2>{selectedLocation.name}</h2>
@@ -65,7 +64,6 @@ const Map = () => {
         </div>
       )}
 
-      {}
       <iframe
         title="Embedded Map"
         width="640"
@@ -74,6 +72,7 @@ const Map = () => {
         frameBorder="0"
         allowFullScreen
       ></iframe>
+      <WeatherComponent />
     </div>
   );
 };
