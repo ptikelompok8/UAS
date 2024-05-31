@@ -38,6 +38,11 @@ class Navbar extends Component {
               <i className="fa-solid fa-right-to-bracket"></i>Sign Up
             </a>
           </li>
+          <li>
+            <a className="NavbarMenu" href="/music">
+              <i className="fa-solid fa-music"></i>Music
+            </a>
+          </li>
         </ul>
         <ul className="NavRight">
           <li>
